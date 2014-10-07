@@ -18,7 +18,7 @@ $ ->
       $('.result').html('')
       for movie in data.Search
         console.log movie.Title
-        $('.result').append("<div><a data-imdb='#{movie.imdbID}' href=\"#\">#{movie.Title}</a></div>")
+        $('.result').append("<div><a data-imdb='#{movie.imdbID}' href=\"#\">#{movie.Title} (#{movie.Year})</a></div>")
       $('.result').slideDown(1500)
       $('.data').slideUp(500)
       $('.poster').fadeOut(500)
